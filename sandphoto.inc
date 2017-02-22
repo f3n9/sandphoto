@@ -62,7 +62,7 @@ class Photo
 		$this->target_height = $this->get_pixel_from_CM($h);
 	}
 
-	function put_photo($path, $bgcolorid="blue")
+	function put_photo($path, $gap, $bgcolorid="blue")
 	{
 		$size = getimagesize($path);
 		$w = $size[0];
@@ -86,7 +86,7 @@ class Photo
 			$cut_x = 0;
 		}
 
-		$GAP = 5;
+		$GAP = $gap;
 
 		$wn = floor($this->container_width / ($this->target_width + $GAP));
 		$hn = floor($this->container_height/ ($this->target_height + $GAP));

@@ -1,3 +1,3 @@
 <?php
-header("location:http://www.sandcomp.com/blog/sandphoto/");
+header("location:http://evermacs.com/sandphoto/sandphoto.php");
 ?>
